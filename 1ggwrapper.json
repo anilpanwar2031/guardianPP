@@ -1,0 +1,35 @@
+{
+    "Search": {
+        "Settings": {
+            "PreSteps": {
+                "Clicks": [
+                    "//*[text()='Claims']"
+                ],
+                "AdditonalInfo": {}
+            },
+            "SearchButtonXpath": "//*[contains(text(),'Validate')]",
+            "PostSteps": {
+                "Clicks": [
+                    "//*[contains(text(),'Submit')]",
+                    "//div[contains(text(), '%s')]/parent::div/preceding-sibling::div//a[contains(@href,'claims')]!@DateOfService"
+                ],
+                "ExceptionClicks": [
+                    "//select[contains(@name,'groupNames')]/option[contains(text(),'Dental')]"
+                ],
+                "AdditonalInfo": {
+                    "aftersleep": 5
+                }
+            }
+        },
+        "Queries": [
+            {
+                "Data": "SubscriberId",
+                "Xpath": "//form[contains(@name,'claimsSearchForm')]//input[@id='subscriberId']"
+            },
+            {
+                "Data": "BirthDate",
+                "Xpath": "//form[contains(@name,'claimsSearchForm')]//input[@id='dateOfBirth']"
+            }
+        ]
+    }
+}

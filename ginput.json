@@ -1,0 +1,57 @@
+{
+  "InputParameters": {
+    "PayorName": "Guardian",
+    "PayorId": 2,
+    "ClientId": "857dc9bd-c432-482d-af84-437a48ccecfe",
+    "AppName": "Payment Processing",
+    "ClinicDetails": {
+      "SearchKey": [
+        "1621"
+      ]
+    }
+  },
+  "PatientData": [
+    {
+      "number": "188124783"
+    }
+  ],
+  "Login": {
+    "Url": "https://signin.guardianlife.com/signin",
+    "LoginId": "payoraccess1",
+    "Password": "Changeme2!",
+    "OtpRequired": false,
+    "OtpEmail": "TODO"
+  },
+  "Xpaths": [
+    {
+      "Id": 162,
+      "ClientId": null,
+      "EligibilityPayorInfoId": 2,
+      "DataContextId": 196,
+      "XPath": "{\"Click\":null,\"Xpaths\":[{\"UsernameXpath\":\"//input[@id='username']\",\"AdditionalInfo\":{\"StepsAfterUsernameInput\":{\"Click\":[\"//button[@id='signin-button']\"]}},\"PasswordXpath\":\"//input[@id='current-password']\",\"LoginButtonXpath\":\"//button[@id='signin-button']\",\"OtpInputXpath\":\"\",\"OtpSubmitXpath\":\"\",\"PreSteps\":[],\"PostSteps\":[],\"OtpXpath\":\"\"}]}",
+      "IsActive": true,
+      "DataContextName": "EligibilityLogin",
+      "ProductCategoryId": 2
+    },
+    {
+      "Id": 451,
+      "ClientId": null,
+      "EligibilityPayorInfoId": 78,
+      "DataContextId": 206,
+      "XPath": "{\"Xpaths\":[{\"AdditonalInfo\":{\"Click\":[\"//td[contains(text(),'%s')]/parent::tr/td[10]!@number\"],\"fileds\":[]},\"xpath\":\"//td/td/tr[@id='AaBb']\"},{\"AdditonalInfo\":{\"Click\":[],\"fileds\":[]},\"xpath\":\"//bolotararaa\"}]}",
+      "IsActive": true,
+      "DataContextName": "EFTPatients",
+      "ProductCategoryId": 6
+}
+  ],
+  "SearchParameters": [
+    {
+      "Id": 47,
+      "EligibilityPayorInfoId": 2,
+      "JsonSettings": "{\"Search\":{\"Settings\":{\"PreSteps\":{\"Clicks\":[\"//li[3][@id='menu-li']\",\"//a[@id='subnav-anchor']\",\"//button[@id='dental-listbox-button']\"],\"AdditonalInfo\":{\"aftersleep\":5}},\"SearchButtonXpath\":\"//*[@id='dental-option-2']\",\"PostSteps\":{\"Clicks\":[],\"AdditonalInfo\":{\"aftersleep\":5}}},\"Queries\":[]}}",
+      "IsActive": true,
+      "ProductCategoryId": 2
+    }
+  ]
+}
+

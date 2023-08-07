@@ -1,0 +1,63 @@
+{
+  "InputParameters": {
+    "PayorName": "Guardian",
+    "PayorId": 2,
+    "ClientId": "857dc9bd-c432-482d-af84-437a48ccecfe",
+    "AppName": "Payment Processing",
+    "ClinicDetails": {
+      "SearchKey": [
+        "1621"
+      ]
+    }
+  },
+  "PatientData": [
+    {
+      "number": "188896718",
+      "ClinicServerId": "0909f68b-522e-4f3f-b1c9-fd595f59159e",
+      "PPGridViewId": 6,
+      "PayorId": 41,
+      "AppName": "Payment Processing",
+      "PPTransPayorListID": "27e7c674-051c-40ec-b9ef-6c84f3a3dd1d",
+      "EligibilityVerificationId": 19
+    }
+
+  ],
+  "Login": {
+    "Url": "https://signin.guardianlife.com/signin",
+    "LoginId": "payoraccesssdb1",
+    "Password": "Consistency1!",
+    "OtpRequired": true,
+    "OtpEmail": "TODO"
+  },
+  "Xpaths": [
+    {
+      "Id": 162,
+      "ClientId": null,
+      "EligibilityPayorInfoId": 2,
+      "DataContextId": 196,
+      "XPath": "{\"Click\":null,\"Xpaths\":[{\"UsernameXpath\":\"//input[@id='username']\",\"AdditionalInfo\":{\"StepsAfterUsernameInput\":{\"Click\":[\"//button[@id='signin-button']\"]}},\"PasswordXpath\":\"//input[@id='current-password']\",\"LoginButtonXpath\":\"//button[@id='signin-button']\",\"PreSteps\":[],\"PostSteps\":[\"//button[contains(text(),'Send code')]\"],\"OtpInputXpath\":\"//input[@id='mfaSecurityCode']\",\"OtpSubmitXpath\":\"//button[contains(text(),'Sign in')]\",\"OtpXpath\":\"Your one-time passcode is:(\\\\d{6})!@Regex\",\"OtpInstructions\":{\"OtpEmail\":\"payorportal@sdbmail.com\",\"OtpEmailPassword\":\"\",\"FromEmail\":\"\",\"EmailTitle\":\"Your one-time passcode is:\",\"tenantID\":\"e44873dc-54c1-425a-8c70-6bd6ee571de4\",\"clientID\":\"aa33b5af-9a5a-4cb3-b120-2b831663f414\",\"clientSecret\":\"K.g8Q~W6gjw-xk4IE67XzTeA7X2FIcF2ecoyJcnq\",\"SMTPAddress\":\"\",\"EncryptionType\":\"\",\"ImapType\":\"\",\"OtpWait\":20}}]}",
+      "IsActive": true,
+      "DataContextName": "EligibilityLogin",
+      "ProductCategoryId": 2
+    },
+    {
+      "Id": 451,
+      "ClientId": null,
+      "EligibilityPayorInfoId": 78,
+      "DataContextId": 206,
+      "XPath": "{\"Xpaths\":[{\"AdditonalInfo\":{\"Click\":[],\"fileds\":\"Status\"},\"xpath\":\"//td[contains(text(),'%s')]/parent::tr/td/div[contains(@title,'claim')]!@number\"},{\"AdditonalInfo\":{\"Click\":[],\"fileds\":\"SubmittedCharges\"},\"xpath\":\"//td[contains(text(),'%s')]/parent::tr/td[8]!@number\"},{\"AdditonalInfo\":{\"Click\":[\"//td[contains(text(),'%s')]/parent::tr/td/div[@class='custom-icon-pdf']!@number\",\"//*[contains(text(),'Open')]\"],\"fileds\":[],\"windowChange\":1,\"window_print\":false},\"xpath\":\"//*[contains(text(),'Open')]\"},{\"AdditonalInfo\":{\"Click\":[],\"fileds\":[],\"windowChange\":1,\"GetPdfFromBase64\":{\"Sleep\":20,\"Script\":\"return document.getElementsByTagName('embed')[0].getAttribute('src').replace('data:application/pdf;base64,','')\"}},\"xpath\":\"/htm/gfdd/dfd\"}]}",
+      "IsActive": true,
+      "DataContextName": "EFTPatients",
+      "ProductCategoryId": 6
+    }
+  ],
+  "SearchParameters": [
+    {
+      "Id": 47,
+      "EligibilityPayorInfoId": 2,
+      "JsonSettings": "{\"Search\":{\"Settings\":{\"PreSteps\":{\"Clicks\":[\"//li[3][@id='menu-li']\",\"//a[@id='subnav-anchor']\",\"//button[@id='dental-listbox-button']\"],\"AdditonalInfo\":{\"aftersleep\":5}},\"SearchButtonXpath\":\"//*[@id='dental-option-2']\",\"PostSteps\":{\"Clicks\":[],\"AdditonalInfo\":{\"aftersleep\":5}}},\"Queries\":[]}}",
+      "IsActive": true,
+      "ProductCategoryId": 2
+    }
+  ]
+}

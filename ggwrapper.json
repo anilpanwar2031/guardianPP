@@ -1,0 +1,22 @@
+{
+    "Click": null,
+    "Xpaths": [
+        {
+            "UsernameXpath": "//input[@id='username']",
+            "AdditionalInfo": {
+                "StepsAfterUsernameInput": {
+                    "Click": [
+                        "//button[@id='signin-button']"
+                    ]
+                }
+            },
+            "PasswordXpath": "//input[@id='current-password']",
+            "LoginButtonXpath": "//button[@id='signin-button']",
+            "OtpInputXpath": "",
+            "OtpSubmitXpath": "",
+            "PreSteps": [],
+            "PostSteps": [],
+            "OtpXpath": ""
+        }
+    ]
+}
